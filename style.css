@@ -1,0 +1,43 @@
+.features-container {
+    display: flex;
+}
+
+.features-list {
+    width: 20%;
+}
+
+.features-list .feature {
+    display: block;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.features-list .feature.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.features-content {
+    width: 80%;
+    position: relative;
+    background: #f0f0f0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
